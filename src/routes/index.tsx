@@ -16,16 +16,16 @@ export const Route = createFileRoute("/")({
 });
 
 const deco = [
-  { t: "(▀̿Ĺ̯▀̿ ̿)", c: "top-8 left-12 text-2xl" },
-  { t: "(⌐■_■)", c: "bottom-40 right-20 text-xl" },
-  { t: "⭐", c: "top-4 right-16" },
-  { t: "🌸", c: "top-12 right-28" },
-  { t: "🍰", c: "top-20 left-24" },
-  { t: "🎈", c: "top-44 left-10" },
-  { t: "💗", c: "top-36 right-6" },
-  { t: "🎀", c: "bottom-24 left-16" },
-  { t: "💖", c: "bottom-28 right-6" },
-  { t: "🍬", c: "bottom-36 left-32" },
+  { t: "(▀̿Ĺ̯▀̿ ̿)", c: "top-8 left-12 text-4xl" },
+  { t: "(⌐■_■)", c: "bottom-40 right-20 text-3xl" },
+  { t: "⭐", c: "top-4 right-16 text-2xl" },
+  { t: "🌸", c: "top-12 right-28 text-2xl" },
+  { t: "🍰", c: "top-20 left-24 text-2xl" },
+  { t: "🎈", c: "top-44 left-10 text-2xl" },
+  { t: "💗", c: "top-36 right-6 text-2xl" },
+  { t: "🎀", c: "bottom-24 left-16 text-2xl" },
+  { t: "💖", c: "bottom-28 right-6 text-2xl" },
+  { t: "🍬", c: "bottom-36 left-32 text-2xl" },
 ];
 
 function Index() {
@@ -37,13 +37,13 @@ function Index() {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background font-sans">
       {deco.map((d, i) => (
-        <span key={i} className={`absolute text-sm opacity-80 animate-floaty ${d.c}`} style={{ animationDelay: `${i * 0.4}s` }}>
+        <span key={i} className={`absolute text-2xl opacity-90 animate-floaty ${d.c}`} style={{ animationDelay: `${i * 0.4}s` }}>
           {d.t}
         </span>
       ))}
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="font-script text-2xl text-title">Hey gurl! 🎉</h1>
-        <div className="text-5xl">🎂</div>
+        <h1 className="font-script text-3xl text-title">Hey gurl! 🎉</h1>
+        <div className="text-7xl">🎂</div>
         <p className="text-sm font-semibold text-foreground">
           Loading your birthday surprise...
         </p>

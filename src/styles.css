@@ -161,3 +161,5 @@
 @utility animate-fill { animation: fill 4s ease-in-out forwards; }
 @utility animate-floaty { animation: floaty 4s ease-in-out infinite; }
 @utility bg-party-gradient { background: linear-gradient(90deg, var(--party), var(--party-glow)); }
+:root { --background: oklch(0.93 0.004 80); --title: oklch(0.4 0.12 20); --party: oklch(0.32 0.15 300); --party-glow: oklch(0.5 0.2 305); --track: oklch(0.86 0.01 300); }
+@theme inline { --color-title: var(--title); }

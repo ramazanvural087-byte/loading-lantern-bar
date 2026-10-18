@@ -37,21 +37,20 @@ function Index() {
   return (
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background font-sans">
       {deco.map((d, i) => (
-        <span key={i} className={`absolute animate-floaty ${d.c}`} style={{ animationDelay: `${i * 0.4}s` }}>
+        <span key={i} className={`absolute text-sm opacity-80 animate-floaty ${d.c}`} style={{ animationDelay: `${i * 0.4}s` }}>
           {d.t}
         </span>
       ))}
-      <div className="flex flex-col items-center gap-3 text-center">
-        <h1 className="font-script text-3xl text-party">Hey gurl! 🎉</h1>
-        <div className="text-6xl">🎂</div>
+      <div className="flex flex-col items-center gap-2 text-center">
+        <h1 className="font-script text-2xl text-title">Hey gurl! 🎉</h1>
+        <div className="text-5xl">🎂</div>
         <p className="text-sm font-semibold text-foreground">
-          {p < 100 ? "Loading your birthday surprise..." : "Your surprise is ready! 💜"}
+          Loading your birthday surprise...
         </p>
-        <div className="h-3 w-40 overflow-hidden rounded-full bg-track">
+        <div className="h-2.5 w-32 overflow-hidden rounded-full bg-track">
           <div className="h-full rounded-full bg-party-gradient transition-all" style={{ width: `${p}%` }} />
         </div>
-        <span className="text-xs text-muted-foreground">{p}%</span>
-      </div>
+              </div>
     </main>
   );
 }
